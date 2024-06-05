@@ -49,16 +49,15 @@ function Gatcha() {
     <>
       <div className="bg-[url('/public/image/pokemon_background.jpg')] bg-cover w-full h-full middle mb-5">
         <div className="bg-gray-900/75 h-full p-12 flex flex-wrap gap-5 items-center">
-          {/* {pokemonData &&
+          {pokemonData &&
             pokemonData.map((item) => (
               <div
                 className="bg-slate-100/10 p-12 rounded text-center text-white shadow min-w-[100px] max-w-[200px] cursor-pointer hover:bg-slate-100/50 hover:text-black hover:scale-110 duration-300 ease-in"
                 key={`${item.location_area.name}-${item.location_area.url}`}
-                onClick={gatchaPokemon()}
               >
                 <p className="uppercase">{item.location_area.name}</p>
               </div>
-            ))} */}
+            ))}
         </div>
       </div>
     </>
