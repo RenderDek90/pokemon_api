@@ -1,4 +1,4 @@
-# Poke Find
+# Pokefind
 
 Website filled with your favourite Pokemons, and you can find in each Locaiton Areas that are in Pokemons.
 
