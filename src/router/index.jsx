@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../components/layout/RootLayout";
 import { ErrorPage } from "../components/pages/ErrorPage";
 import { GatchaPage } from "../components/pages/GatchaPage";
-import { fetchData, fetchSingleData } from "../api/loaders";
+import { fetchData, fetchLocationData, fetchSingleData } from "../api/loaders";
 import { Home } from "../components/pages/Home";
 
 export const router = createBrowserRouter([
@@ -14,12 +14,13 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: fetchData,
+        loader: fetchData
       },
       {
         path: "/gatcha",
         element: <GatchaPage />,
-      },
-    ],
-  },
+        loader: fetchLocationData
+      }
+    ]
+  }
 ]);

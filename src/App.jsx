@@ -4,11 +4,11 @@ import { GlobalContext } from "./components/content";
 
 function App() {
   const name = {
-    username: "Darren",
+    username: "Darren"
   };
 
   return (
-    <div className="bg-[#252525] h-full">
+    <div className="bg-[#252525] h-full w-full">
       <GlobalContext.Provider value={name}>
         <RouterProvider router={router} />
       </GlobalContext.Provider>

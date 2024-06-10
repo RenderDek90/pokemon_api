@@ -28,8 +28,8 @@ export const Home = () => {
     setIsPendingSinglePoke(true);
     fetchSingleData({
       params: {
-        idOrName: item,
-      },
+        idOrName: item
+      }
     })
       .then((response) => response.json())
       .then((res) => {
@@ -43,22 +43,25 @@ export const Home = () => {
     if (e.target.value != "") {
       setPokeSearch(e.target.value);
     }
+
     setPokemonData(pokemon.results);
     setCounter(pokemon.results.length);
   };
 
   const handleSearch = () => {
-    const filteredData = pokemonData.filter((item) => {
-      let searchData = pokeSearch.toLowerCase();
-      return item.name.includes(searchData);
-    });
+    if (pokeSearch != "") {
+      const filteredData = pokemonData.filter((item) => {
+        let searchData = pokeSearch.toLowerCase();
+        return item.name.includes(searchData);
+      });
 
-    setPokemonData(filteredData);
-    setCounter(filteredData.length);
+      setPokemonData(filteredData);
+      setCounter(filteredData.length);
+    }
   };
 
-  const handleKeydown = () => {
-    handleSearch();
+  const handleKeydown = (e) => {
+    if (e.key == "Enter") handleSearch();
   };
 
   return (
