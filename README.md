@@ -1,8 +1,34 @@
-# React + Vite
+# Poke Find
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website filled with your favourite Pokemons, and you can find in each Locaiton Areas that are in Pokemons.
 
-Currently, two official plugins are available:
+# Tools
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Tailwind CSS
+- Yarn
+- Pokemon API
+
+# Pokemon API
+
+- Pokemon API is used to fetch the data of Pokemons.
+- API Link: https://pokeapi.co/
+- API Documentation: https://pokeapi.co/docs/v2
+
+# Usage
+
+install yarn
+
+```bash
+yarn
+```
+
+run yarn for development
+
+```bash
+yarn dev
+```
+
+# Why make this ?
+
+I made this project to practice my React skills and to learn how to use APIs in React, to complete a task from a previous interview that I weren't able to finish at that time.
